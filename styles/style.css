@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+
+    height: 5rem;
+
+    align-items: center;
+    background-color: plum;
+}
+
+h1{
+    justify-self: center;
+}
+#menu-icon{
+    width: 3rem;
+    height: 3rem;
+
+    margin-inline-start: 1rem;
+
+    background-color: grey;
+}

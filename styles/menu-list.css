@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+#menu-list{
+    width: 25rem;
+
+    background-color: white;
+    box-shadow: 1px 1px 9px 0px #0000004f;
+    font-size: 1.3rem;
+
+}
+#categories{
+    display: grid;
+    grid-template-columns: auto;
+}
+#menu-list li{
+    list-style: none;
+}
+#menu-list li a{
+    display: block;
+
+    margin-block-end: 1px;
+    padding:1rem 0rem 1rem 2rem;
+    border-top: 1px solid rgb(107 107 107 / 21%);
+}
+#menu-list li:first-of-type a{
+    border:0;
+    margin-block-start: 0;
+}
+#menu-list li:hover{
+    cursor:pointer;
+    background-color: rgb(214 214 214 / 50%);
+    padding-inline-start: 1.5rem;
+}
+#menu-listli:hover a{
+    border: none;
+}
