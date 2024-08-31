@@ -1,9 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
+@import "./style.css";
+
 #nav-bar{
     display: flex;
     flex-wrap: wrap;
@@ -48,8 +44,16 @@
 #nav-list li{
     display: flex;
     justify-content: center;
+    height: 100%;
     list-style:none;
 }
 #nav-list a{
-    justify-self: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#nav-list a:hover{
+    background-color: var(--hover);
 }
