@@ -2,6 +2,7 @@
 
 
 #menu-list{
+    display: none;
     width: 25rem;
 
     background-color: white;

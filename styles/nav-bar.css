@@ -3,10 +3,11 @@
 #nav-bar{
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.141);
 }
 #logo-container{
     width: 100%;
-    padding:1rem;
+    padding:1.3rem 2rem;
     border-block-end: 1px solid rgba(0, 0, 0, 0.143);
 
     background-color: black;
@@ -17,7 +18,7 @@
     margin-inline-end:.5rem ;
 }
 #logo-container a{
-    display: flex;
+    display: inline-flex;
     align-items: center;
     font-weight: bold;
     font-size: 1.2rem;
@@ -25,7 +26,8 @@
 }
 
 #menu-icon{
-    display: flex;
+    /* display: flex; */
+    display: none;
     align-items: center;
     height: 3rem;
     padding-inline: 1.5rem;
@@ -35,11 +37,11 @@
     height: 2rem;
 }
 #nav-list{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center ;
-
+    display: flex;
     flex-grow: 1;
+    justify-content: center;
+    align-items: center ;
+    height: 4rem;
 }
 #nav-list li{
     display: flex;
@@ -49,11 +51,12 @@
 }
 #nav-list a{
     display: flex;
-    height: 100%;
-    width: 100%;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    padding-inline:5rem;
 }
 #nav-list a:hover{
     background-color: var(--hover);
+    box-shadow: 0 1px black;
 }
